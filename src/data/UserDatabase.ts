@@ -18,6 +18,19 @@ export class UserDatabase extends BaseDatabase {
         } catch (error) {
             throw new Error (error.sqlMessage || error.message)
         }
-        
+    }
+
+    async getByEmail(email: string) :Promise <any>{
+        try {
+            const result = await this.getConnection()
+            .select("*")
+            .from(UserDatabase.TABLE_NAME)
+            .where({email})
+
+            return result[0]
+            
+        } catch (error) {
+            throw new Error (error.sqlMessage || error.message)
+        }
     }
 }
