@@ -2,7 +2,7 @@ import { UserDatabase } from "../data/UserDatabase";
 import { user } from "../model/User";
 import { HashManager } from "../services/HashManger";
 import { IdGenerator } from "../services/idGenerator";
-import { TokenManager } from "../services/TokenManagar";
+import { TokenManager } from "../services/TokenManager";
 
 export class UserBusiness {
   async create(
