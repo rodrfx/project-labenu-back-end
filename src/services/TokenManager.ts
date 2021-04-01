@@ -5,12 +5,12 @@ export class TokenManager {
         return jwt.sign({
             id: id
         },
-        "asd",
-        {expiresIn: "1d"})
+        process.env.JWT_KEY as string,
+        {expiresIn: process.env.JWT_EXPIRES_IN})
 
     }
     get(token: string): object {
-        const payload = jwt.verify(token, "asd")
+        const payload = jwt.verify(token, process.env.JWT_KEY as string)
         return payload as object
     }
 }

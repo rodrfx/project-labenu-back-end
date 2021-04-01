@@ -12,7 +12,7 @@ export class ImageBusiness {
     
             try {
     
-                if (!input.subtitle || !input.author || !input.file || !input.collection || input.tags.length < 1) {
+                if (!input.subtitle || !input.file || !input.collection || input.tags.length < 1) {
                     throw new Error("Preencha todos os campos corretamente");
                 }
     
@@ -45,7 +45,7 @@ export class ImageBusiness {
                     file: input.file,
                     tags: checkedTags,
                     collection: input.collection,
-                    date: input.date
+                    date: new Date()
                 }
     
                 const imageDatabase = new ImageDatabase();

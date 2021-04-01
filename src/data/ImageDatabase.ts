@@ -19,7 +19,7 @@ export class ImageDatabase extends BaseDatabase{
                 id: image.id,
                 subtitle: image.subtitle,
                 author: image.author,
-                date: image.date,
+                date: image.date.toISOString().substring(0, 10),
                 file: image.file,
                 collection: image.collection
             })

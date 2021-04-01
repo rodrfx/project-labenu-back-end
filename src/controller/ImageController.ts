@@ -11,11 +11,10 @@ export class ImageController {
 
             const input: createImageInputDTO = {
                 subtitle: req.body.subtitle,
-                author: req.body.author,
                 file: req.body.file,
                 tags: req.body.tags,
                 collection: req.body.collection,
-                date: req.body.date
+                author: req.body.author
             }
 
             const imageBusiness = new ImageBusiness();

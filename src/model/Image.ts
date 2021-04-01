@@ -4,7 +4,7 @@ export type image = {
     id: string,
 	subtitle: string,
 	author: string,
-	date?: Date,
+	date: Date,
 	file: string,
 	tags?: tag[],
 	collection: string
@@ -16,5 +16,4 @@ export type createImageInputDTO = {
 	file: string,
 	tags: string[],
 	collection: string,
-	date: Date
 }

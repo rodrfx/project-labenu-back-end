@@ -35,7 +35,6 @@ export class UserDatabase extends BaseDatabase {
 
         if (!result[0]){
             throw new Error("Usuário inválido");
-            
         }
 
       return {
