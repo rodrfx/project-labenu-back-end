@@ -1,13 +1,13 @@
 # Photo Wall - Backend
 
 ## Descrição do Projeto
-<p align="center">O projeto é um gerenciador de imagens, criado no curso Labenu.</p>
+<p>O projeto é um gerenciador de imagens, criado no curso Labenu.</p>
 
-<h2 align="center">
+<h3>
     <a href="https://documenter.getpostman.com/view/13244358/TzCP6mpS#2ef9ea82-6bc7-4f67-a7f1-55c089b534dd">🔗 Documentação da API</a>
-</h2>
-## O que funciona
-### Endpoints básicos:
+</h3>
+
+## O que funciona:
 * Cadastro
 * Login
 * Criar imagem
@@ -15,3 +15,11 @@
 * Exibir imagem pelo id
 * Criar tag
 * Exibir todas as tags
+
+## Para rodar:
+* Fazer o git clone
+* No terminar utilizar o comando: npm install
+* Rodar o projeto com o comando: npm run start
+
+## Tecnologia
+* Typescript
